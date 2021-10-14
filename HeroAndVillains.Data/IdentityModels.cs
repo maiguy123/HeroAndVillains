@@ -53,7 +53,7 @@ namespace HeroAndVillains.Data
     {
         public IdentityUserLoginConfiguration()
         {
-            Haskey(iul => iul.UserId);
+            HasKey(iul => iul.UserId);
         }
     }
 
@@ -61,7 +61,7 @@ namespace HeroAndVillains.Data
     {
         public IdentityUserRoleConfiguration()
         {
-            Haskey(iur => iur.UserId);
+            HasKey(iur => iur.UserId);
         }
     }
 
