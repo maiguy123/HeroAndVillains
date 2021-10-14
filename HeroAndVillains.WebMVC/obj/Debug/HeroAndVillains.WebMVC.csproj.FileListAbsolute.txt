@@ -1,0 +1,2 @@
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\obj\Debug\HeroAndVillains.WebMVC.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\obj\Debug\HeroAndVillains.WebMVC.csproj.CoreCompileInputs.cache
