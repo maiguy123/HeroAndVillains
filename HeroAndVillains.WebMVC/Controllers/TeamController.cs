@@ -11,7 +11,8 @@ namespace HeroAndVillains.WebMVC.Controllers
         // GET: Team
         public ActionResult Index()
         {
-            return View();
+            var model = new HeroAndVillains.Models.TeamListItem[0];
+            return View(model);
         }
     }
 }

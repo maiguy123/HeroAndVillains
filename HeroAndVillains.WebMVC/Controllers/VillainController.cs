@@ -11,7 +11,8 @@ namespace HeroAndVillains.WebMVC.Controllers
         // GET: Villain
         public ActionResult Index()
         {
-            return View();
+            var model = new VillainListItem[0];
+            return View(model);
         }
     }
 }
