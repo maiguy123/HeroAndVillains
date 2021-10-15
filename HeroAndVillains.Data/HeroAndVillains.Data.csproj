@@ -56,6 +56,15 @@
   <ItemGroup>
     <Compile Include="Hero.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\202110141816120_InitialCreate.cs" />
+    <Compile Include="Migrations\202110141816120_InitialCreate.Designer.cs">
+      <DependentUpon>202110141816120_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110141842453_Team.cs" />
+    <Compile Include="Migrations\202110141842453_Team.Designer.cs">
+      <DependentUpon>202110141842453_Team.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Team.cs" />
     <Compile Include="Villain.cs" />
@@ -63,6 +72,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202110141816120_InitialCreate.resx">
+      <DependentUpon>202110141816120_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110141842453_Team.resx">
+      <DependentUpon>202110141842453_Team.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
