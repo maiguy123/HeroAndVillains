@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace HeroAndVillains.WebMVC.Controllers
 {
+    [Authorize]
     public class VillainController : Controller
     {
         // GET: Villain
