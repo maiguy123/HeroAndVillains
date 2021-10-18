@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HeroAndVillains.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,11 +16,21 @@ namespace HeroAndVillains.WebMVC.Controllers
             var model = new HeroAndVillains.Models.TeamListItem[0];
             return View(model);
         }
-        // Add Method here VVVV
         //GET
         public ActionResult Create()
         {
             return View();
+        }
+        // Add Method here VVVV
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(TeamCreate model)
+        {
+            if (ModelState.IsValid)
+            {
+
+            }
+            return View(model);
         }
     }
 }

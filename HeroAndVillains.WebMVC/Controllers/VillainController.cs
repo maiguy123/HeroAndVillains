@@ -17,11 +17,21 @@ namespace HeroAndVillains.WebMVC.Controllers
             return View(model);
         }
 
-        //Add methos here VVVV
         // GET 
-        public ActionResult Create ()
+        public ActionResult Create()
         {
             return View();
+        }
+        //Add methos here VVVV
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create (VillainCreate model)
+        {
+            if (ModelState.IsValid)
+            {
+
+            }
+            return View(model);
         }
     }
 }

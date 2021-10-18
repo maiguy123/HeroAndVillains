@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using HeroAndVillains.Models;
 using System.Web.Mvc;
 
 namespace HeroAndVillains.WebMVC.Controllers
@@ -15,11 +12,21 @@ namespace HeroAndVillains.WebMVC.Controllers
             var model = new HeroAndVillains.Models.HeroListItem[0];
             return View(model);
         }
-        // Add Method here VVVV
         //GET
         public ActionResult Create()
         {
             return View();
+        }
+        // Add Method here VVVV
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(HeroCreate model)
+        {
+            if (ModelState.IsValid)
+            {
+
+            }
+            return View(model);
         }
     }
 }
