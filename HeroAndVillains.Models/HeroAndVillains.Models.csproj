@@ -54,9 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HeroCreate.cs" />
     <Compile Include="HeroListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TeamCreate.cs" />
     <Compile Include="TeamListItem.cs" />
+    <Compile Include="VillainCreate.cs" />
     <Compile Include="VillainListItem.cs" />
   </ItemGroup>
   <ItemGroup>

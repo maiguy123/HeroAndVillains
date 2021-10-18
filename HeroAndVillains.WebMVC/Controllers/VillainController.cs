@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HeroAndVillains.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,6 +15,13 @@ namespace HeroAndVillains.WebMVC.Controllers
         {
             var model = new VillainListItem[0];
             return View(model);
+        }
+
+        //Add methos here VVVV
+        // GET 
+        public ActionResult Create ()
+        {
+            return View();
         }
     }
 }

@@ -15,5 +15,11 @@ namespace HeroAndVillains.WebMVC.Controllers
             var model = new HeroAndVillains.Models.HeroListItem[0];
             return View(model);
         }
+        // Add Method here VVVV
+        //GET
+        public ActionResult Create()
+        {
+            return View();
+        }
     }
 }
