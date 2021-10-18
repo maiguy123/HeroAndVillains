@@ -240,6 +240,9 @@
     <Content Include="Views\Hero\Index.cshtml" />
     <Content Include="Views\Villain\Index.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
+    <Content Include="Views\Hero\Create.cshtml" />
+    <Content Include="Views\Villain\Create.cshtml" />
+    <Content Include="Views\Team\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
