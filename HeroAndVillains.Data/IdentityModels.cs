@@ -32,9 +32,9 @@ namespace HeroAndVillains.Data
             return new ApplicationDbContext();
         }
 
-        public DbSet<Hero> Heros { get; set; }
-        public DbSet<Villain> Villains { get; set; }
-        public DbSet<Team> Teams { get; set; }
+        public DbSet<MetaHumans> PoweredPeople { get; set; }
+        public DbSet<Arching> Story { get; set; }
+        public DbSet<Team> Group { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -54,11 +54,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArchingServices.cs" />
+    <Compile Include="MetaHumanServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TeamService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HeroAndVillains.Data\HeroAndVillains.Data.csproj">
+      <Project>{39c35077-3fd8-4778-a390-db0ae46d7c68}</Project>
+      <Name>HeroAndVillains.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HeroAndVillains.Models\HeroAndVillains.Models.csproj">
+      <Project>{d8c3d124-d854-429d-b2f2-9213fb7348fc}</Project>
+      <Name>HeroAndVillains.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

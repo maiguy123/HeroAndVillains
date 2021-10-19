@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace HeroAndVillains.Models
 {
-    public class HeroListItem
+    public class ArchingDetail
     {
-        public string PowerType { get; set; }
-        public int Rating { get; set; }
-        public string Home { get; set; }
+        public string ArchingID { get; set; }
+        public string Story { get; set; }
     }
 }

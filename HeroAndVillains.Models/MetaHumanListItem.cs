@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace HeroAndVillains.Models
 {
-    public class VillainCreate
+    public class MetaHumanListItem
     {
-        [Required]
         public string PowerType { get; set; }
         public int Rating { get; set; }
         public string Home { get; set; }
+        public string ArchingID { get; set; }
+        public string TeamID { get; set; }
     }
 }

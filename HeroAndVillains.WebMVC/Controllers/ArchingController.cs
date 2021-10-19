@@ -1,26 +1,28 @@
-﻿using HeroAndVillains.Models;
+﻿using HeroAndVillains.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 
 namespace HeroAndVillains.WebMVC.Controllers
 {
-    [Authorize]
-    public class HeroController : Controller
+    public class ArchingController : Controller
     {
-        // GET: Hero
+        //GET: Note
         public ActionResult Index()
         {
-            var model = new HeroAndVillains.Models.HeroListItem[0];
-            return View(model);
+            var service  = new ArchingServices(userId);
+            return View(service);
         }
-        //GET
         public ActionResult Create()
         {
             return View();
         }
-        // Add Method here VVVV
+        // Add code here vvvv
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(HeroCreate model)
+        public ActionResult Create (ArchingCreate Model)
         {
             if (ModelState.IsValid)
             {
@@ -28,5 +30,6 @@ namespace HeroAndVillains.WebMVC.Controllers
             }
             return View(model);
         }
+            
     }
 }

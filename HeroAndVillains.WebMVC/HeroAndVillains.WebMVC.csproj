@@ -168,11 +168,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\HeroController.cs" />
+    <Compile Include="Controllers\ArchingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MetaHumanController.cs" />
     <Compile Include="Controllers\TeamController.cs" />
-    <Compile Include="Controllers\VillainController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -237,12 +237,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Hero\Index.cshtml" />
-    <Content Include="Views\Villain\Index.cshtml" />
     <Content Include="Views\Team\Index.cshtml" />
-    <Content Include="Views\Hero\Create.cshtml" />
-    <Content Include="Views\Villain\Create.cshtml" />
     <Content Include="Views\Team\Create.cshtml" />
+    <Content Include="Views\MetaHuman\Create.cshtml" />
+    <Content Include="Views\Arching\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

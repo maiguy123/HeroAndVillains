@@ -1,4 +1,4 @@
-﻿using HeroAndVillains.Models;
+﻿using HeroAndVillains.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,25 +7,23 @@ using System.Web.Mvc;
 
 namespace HeroAndVillains.WebMVC.Controllers
 {
-    [Authorize]
-    public class VillainController : Controller
+    public class MetaHumanController : Controller
     {
-        // GET: Villain
+        // GET: MetaHuman
         public ActionResult Index()
         {
-            var model = new VillainListItem[0];
-            return View(model);
+            var service = new MetaHumanServices(userId);
+            return View(service);
         }
-
-        // GET 
         public ActionResult Create()
         {
             return View();
         }
-        //Add methos here VVVV
+
+        //Add code here vvvv
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create (VillainCreate model)
+        public ActionResult Create (MetaHumanCreate Model)
         {
             if (ModelState.IsValid)
             {

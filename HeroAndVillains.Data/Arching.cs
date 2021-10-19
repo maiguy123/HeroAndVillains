@@ -5,13 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HeroAndVillains.Models
+namespace HeroAndVillains.Data
 {
-   public class TeamCreate
+   public class Arching
     {
+        [Key]
+        public string ArchingID { get; set; }
         [Required]
-        public string HeroID { get; set; }
-        public int Rating { get; set; }
-        public string Members { get; set; }
+        public string Story { get; set; }
+        public Guid OwnerId { get; set; }
     }
 }
