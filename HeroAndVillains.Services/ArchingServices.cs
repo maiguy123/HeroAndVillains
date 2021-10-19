@@ -48,5 +48,20 @@ namespace HeroAndVillains.Services
             }
 
         }
+        public ArchingDetail GetArchingById(string id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Story
+                    .Single(e => e.ArchingID == id && e.OwnerId == _userId);
+                return
+                    new ArchingDetail
+                    {
+                        Story = entity.Story
+                    };
+            }
+        }
     }
 }

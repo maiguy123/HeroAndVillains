@@ -53,6 +53,24 @@ namespace HeroAndVillains.Services
             }
 
         }
+        public MetaHumanDetail GetMetaHumansById(string id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .PoweredPeople
+                    .Single(e => e.MetaHumanID == id && e.OwnerId == _userId);
+                return
+                    new MetaHumanDetail
+                    {
+                        PowerType = entity.PowerType,
+                        Rating = entity.Rating,
+                        Home = entity.Home,
+
+                    };
+            }
+        }
 
     }
 }
