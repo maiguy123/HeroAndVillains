@@ -8,7 +8,7 @@ namespace HeroAndVillains.Models
 {
     public class TeamListItem
     {
-        public string HeroID { get; set; }
+        public int HeroID { get; set; }
         public int Rating { get; set; }
         public string Members { get; set; }
     }

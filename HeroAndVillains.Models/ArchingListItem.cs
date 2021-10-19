@@ -8,7 +8,7 @@ namespace HeroAndVillains.Models
 {
     public class ArchingListItem
     {
-        public string ArchingID { get; set; }
+        public int ArchingID { get; set; }
         public string Story { get; set; }
     }
 }

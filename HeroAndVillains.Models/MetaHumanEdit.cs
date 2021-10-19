@@ -9,11 +9,13 @@ namespace HeroAndVillains.Models
     public class MetaHumanEdit
     {
 
+        public int MetaHumanID{ get; set; }
+       
         public string PowerType { get; set; }
         public int Rating { get; set; }
         public string Home { get; set; }
-        public string ArchingID { get; set; }
-        public string TeamID { get; set; }
+        public int ArchingID { get; set; }
+        public int TeamID { get; set; }
 
     }
 }

@@ -11,6 +11,7 @@ namespace HeroAndVillains.Services
     public class ArchingServices
     {
         private readonly Guid _userId;
+        public ArchingServices() { }
         public ArchingServices(Guid userId)
         {
             _userId = userId;
@@ -48,7 +49,7 @@ namespace HeroAndVillains.Services
             }
 
         }
-        public ArchingDetail GetArchingById(string id)
+        public ArchingDetail GetArchingById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -63,5 +64,34 @@ namespace HeroAndVillains.Services
                     };
             }
         }
+            public bool UpdateArching (ArchingEdit model)
+            {
+                using (var ctx = new ApplicationDbContext())
+                {
+                    var entity =
+                        ctx
+                        .Story
+                        .Single(e => e.ArchingID == model.ArchingID && e.OwnerId == _userId);
+
+                    entity.Story = model.Story;
+
+                    return ctx.SaveChanges() == 1;
+                }
+            }
+            public bool DeleteArching (int archingId)
+            {
+                using (var ctx = new ApplicationDbContext())
+                {
+                    var entity =
+                        ctx
+                        .Story
+                        .Single(e => e.ArchingID == archingId && e.OwnerId == _userId);
+
+                    ctx.Story.Remove(entity);
+
+                    return ctx.SaveChanges() == 1;
+
+                }
+            }
     }
 }

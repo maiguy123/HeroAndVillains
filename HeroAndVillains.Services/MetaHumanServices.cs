@@ -11,6 +11,7 @@ namespace HeroAndVillains.Services
     public class MetaHumanServices
     {
         private readonly Guid _userId;
+        public MetaHumanServices () { }
         public MetaHumanServices(Guid userId)
         {
             _userId = userId;
@@ -53,7 +54,7 @@ namespace HeroAndVillains.Services
             }
 
         }
-        public MetaHumanDetail GetMetaHumansById(string id)
+        public MetaHumanDetail GetMetaHumansById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -69,6 +70,37 @@ namespace HeroAndVillains.Services
                         Home = entity.Home,
 
                     };
+            }
+        }
+            public bool UpdateMetaHuman(MetaHumanEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .PoweredPeople
+                    .Single(e => e.MetaHumanID == model.MetaHumanID && e.OwnerId == _userId);
+
+                entity.PowerType = model.PowerType;
+                entity.Rating = model.Rating;
+                entity.Home = model.Home;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteMetaHuman (int metaHumanId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .PoweredPeople
+                    .Single(e => e.MetaHumanID == metaHumanId && e.OwnerId == _userId);
+
+                ctx.PoweredPeople.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
             }
         }
 

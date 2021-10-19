@@ -10,7 +10,7 @@ namespace HeroAndVillains.Models
    public class TeamCreate
     {
         [Required]
-        public string HeroID { get; set; }
+        public int HeroID { get; set; }
         public int Rating { get; set; }
         public string Members { get; set; }
     }

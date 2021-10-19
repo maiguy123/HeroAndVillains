@@ -11,7 +11,7 @@ namespace HeroAndVillains.Data
     public class Team
     {
         [Key]
-        public string TeamID { get; set; }
+        public int TeamID { get; set; }
      
         public virtual List<MetaHumans> Members { get; set; }
 

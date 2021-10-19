@@ -1,5 +1,6 @@
 ﻿using HeroAndVillains.Models;
 using System;
+using HeroAndVillains.Services;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -31,6 +32,79 @@ namespace HeroAndVillains.WebMVC.Controllers
 
             }
             return View(model);
+        }
+        public ActionResult Details (int id )
+        {
+            var svc = CreateTeamService();
+            var model = svc.GetTeamById(id);
+
+            return View(model);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, TeamEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (model.TeamID != id)
+            {
+                ModelState.AddModelError("", "Id Mismatch");
+                return View(model);
+            }
+            var service = CreateTeamService();
+
+            if (service.UpdateTeam(model))
+            {
+                TempData["SaveResult"] = "Your not was updated.";
+                return RedirectToAction("Index");
+            }
+            ModelState.AddModelError("", "Your note could not be updated.");
+            return View(model);
+
+        }
+
+
+        public ActionResult Edit(int id)
+        {
+            var service = CreateTeamService();
+            var detail = service.GetTeamById(id);
+            var model =
+                new TeamEdit
+                {
+                    Rating = detail.Rating,
+                };
+            return View(model);
+        }
+
+
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateTeamService();
+            var model = svc.GetTeamById(id);
+            return View(model);
+        }
+
+
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeletePost(int id)
+        {
+            var service = CreateTeamService();
+
+            service.DeleteTeam(id);
+
+            TempData["SaveResult"] = "Your Team was deleted";
+
+            return RedirectToAction("Index");
+        }
+        public TeamService CreateTeamService()
+        {
+            var service = new TeamService();
+            return service;
         }
     }
 }

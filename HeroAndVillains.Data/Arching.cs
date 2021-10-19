@@ -10,7 +10,7 @@ namespace HeroAndVillains.Data
    public class Arching
     {
         [Key]
-        public string ArchingID { get; set; }
+        public int ArchingID { get; set; }
         [Required]
         public string Story { get; set; }
         public Guid OwnerId { get; set; }

@@ -13,7 +13,7 @@ namespace HeroAndVillains.Models
         public string PowerType { get; set; }
         public int Rating { get; set; }
         public string Home { get; set; }
-        public string ArchingID { get; set; }
-        public string TeamID { get; set; }
+        public int ArchingID { get; set; }
+        public int TeamID { get; set; }
     }
 }

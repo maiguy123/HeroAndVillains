@@ -11,6 +11,7 @@ namespace HeroAndVillains.Services
     public class TeamService
     {
         private readonly Guid _userId;
+        public TeamService () { }
         public TeamService(Guid userId)
         {
             _userId = userId;
@@ -48,7 +49,7 @@ namespace HeroAndVillains.Services
                 return query.ToArray();
             }
         }
-        public TeamDeatail GetTeamById(string id)
+        public TeamDeatail GetTeamById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -61,6 +62,35 @@ namespace HeroAndVillains.Services
                     {
                         Rating = entity.Rating,
                     };
+
+            }
+            
+        }
+            public bool UpdateTeam(TeamEdit model)
+            {
+                using(var ctx = new ApplicationDbContext())
+                {
+                    var entity =
+                        ctx
+                        .Group
+                        .Single(e => e.TeamID == model.TeamID && e.OwnerId == _userId);
+                    entity.Rating = model.Rating;
+
+                    return ctx.SaveChanges() == 1;
+                }
+            }
+        public bool DeleteTeam (int teamId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Group
+                    .Single(e => e.TeamID == teamId && e.OwnerId == _userId);
+
+                ctx.Group.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
 
             }
         }

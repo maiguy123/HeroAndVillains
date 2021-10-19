@@ -11,7 +11,7 @@ namespace HeroAndVillains.Data
     public class MetaHumans
     {
         [Key]
-        public string MetaHumanID { get; set; }
+        public int MetaHumanID { get; set; }
         [Required]
         [Display(Name = "PowerType")]
         public string PowerType { get; set; }
@@ -21,7 +21,7 @@ namespace HeroAndVillains.Data
         public string Home { get; set; }
        
         [ForeignKey(nameof(Arching))]
-        public string ArchingID { get; set; }
+        public int ArchingID { get; set; }
         public virtual Arching Arching { get; set; }
         [ForeignKey(nameof(Team))]
         public string TeamID { get; set; }
