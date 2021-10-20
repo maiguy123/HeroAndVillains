@@ -49,9 +49,11 @@ namespace HeroAndVillains.Services
                             PowerType = e.PowerType,
                             Rating = e.Rating,
                             Home = e.Home,
+
                             ArchingID = e.ArchingID,
                             TeamID = e.TeamID,
                             MetaHumanID = e.MetaHumanID,
+
                         }
                         );
                 return query.ToArray();

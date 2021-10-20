@@ -238,7 +238,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Arching\Index.cshtml" />
+
     <Content Include="Views\MetaHuman\Index.cshtml" />
+
+
     <Content Include="Views\MetaHuman\Create.cshtml" />
     <Content Include="Views\Arching\Create.cshtml" />
     <Content Include="Views\Arching\Edit.cshtml" />
@@ -252,6 +255,7 @@
     <Content Include="Views\Team\Edit.cshtml" />
     <Content Include="Views\Team\Delete.cshtml" />
     <Content Include="Views\MetaHuman\Delete.cshtml" />
+
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
