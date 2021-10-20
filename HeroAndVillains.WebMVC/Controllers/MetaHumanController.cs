@@ -28,11 +28,15 @@ namespace HeroAndVillains.WebMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(MetaHumanCreate model)
         {
-            if (ModelState.IsValid)
-            {
-
+            if (!ModelState.IsValid) { 
+                return View(model);
+            }
+            var service = new MetaHumanServices();
+            if (service.CreateMetaHuman(model)) { 
+                return RedirectToAction("Index");
             }
             return View(model);
+
         }
         public ActionResult Details(int id)
         {

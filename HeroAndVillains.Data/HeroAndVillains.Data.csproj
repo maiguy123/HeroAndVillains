@@ -57,12 +57,29 @@
     <Compile Include="Arching.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="MetaHumans.cs" />
+    <Compile Include="Migrations\202110200042077_InitialCreate.cs" />
+    <Compile Include="Migrations\202110200042077_InitialCreate.Designer.cs">
+      <DependentUpon>202110200042077_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110200250206_HeroAnd.cs" />
+    <Compile Include="Migrations\202110200250206_HeroAnd.Designer.cs">
+      <DependentUpon>202110200250206_HeroAnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Team.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202110200042077_InitialCreate.resx">
+      <DependentUpon>202110200042077_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110200250206_HeroAnd.resx">
+      <DependentUpon>202110200250206_HeroAnd.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

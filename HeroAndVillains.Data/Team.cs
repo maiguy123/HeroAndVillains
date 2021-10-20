@@ -13,9 +13,10 @@ namespace HeroAndVillains.Data
         [Key]
         public int TeamID { get; set; }
      
-        public virtual List<MetaHumans> Members { get; set; }
+        //public virtual List<MetaHumans> Members { get; set; }
 
         [Required]
+        public string Name { get; set; }
         public int Rating { get; set; }
         public Guid OwnerId { get; set; }
     }

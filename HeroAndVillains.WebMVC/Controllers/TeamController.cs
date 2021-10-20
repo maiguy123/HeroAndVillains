@@ -14,7 +14,8 @@ namespace HeroAndVillains.WebMVC.Controllers
         // GET: Team
         public ActionResult Index()
         {
-            var model = new HeroAndVillains.Models.TeamListItem[0];
+            var service = CreateTeamService();
+            var model = service.GetTeams();
             return View(model);
         }
         //GET
@@ -27,13 +28,19 @@ namespace HeroAndVillains.WebMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(TeamCreate model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-
+                return View(model);
+            }
+            var service = CreateTeamService();
+            if (service.CreateTeam(model))
+            {
+                return RedirectToAction("Index");
             }
             return View(model);
+
         }
-        public ActionResult Details (int id )
+        public ActionResult Details(int id)
         {
             var svc = CreateTeamService();
             var model = svc.GetTeamById(id);
@@ -74,6 +81,7 @@ namespace HeroAndVillains.WebMVC.Controllers
                 new TeamEdit
                 {
                     Rating = detail.Rating,
+                    Name = detail.Name,
                 };
             return View(model);
         }

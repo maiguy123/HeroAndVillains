@@ -14,7 +14,9 @@ namespace HeroAndVillains.WebMVC.Controllers
         public ActionResult Index()
         {
             var service  = new ArchingServices();
-            return View(service);
+            var model = service.GetArching();
+            return View(model);
+
         }
         public ActionResult Create()
         {
@@ -25,9 +27,14 @@ namespace HeroAndVillains.WebMVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create (ArchingCreate model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-
+                return View(model);
+            }
+            var service = new ArchingServices();
+            if (service.CreateArching(model))
+            {
+                return RedirectToAction("Index");
             }
             return View(model);
         }

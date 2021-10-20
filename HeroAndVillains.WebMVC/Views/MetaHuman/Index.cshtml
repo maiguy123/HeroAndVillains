@@ -26,12 +26,12 @@
         <th>
             @Html.DisplayNameFor(model => model.TeamID)
         </th>
-        
+
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
-    @Html.HiddenFor(modelItem=> item.MetaHuamnID)
+
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.PowerType)
@@ -48,11 +48,12 @@
         <td>
             @Html.DisplayFor(modelItem => item.TeamID)
         </td>
-        
+
         <td>
-            @Html.ActionLink("Edit", "Edit", new {  id=item.MetaHuamnID  }) |
-            @Html.ActionLink("Details", "Details", new {  id=item.MetaHuamnID  }) |
-            @Html.ActionLink("Delete", "Delete", new {  id=item.MetaHuamnID })
+            @Html.ActionLink("Edit", "Edit", new {  id=item.MetaHumanID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MetaHumanID }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.MetaHumanID })
+
         </td>
     </tr>
 }
