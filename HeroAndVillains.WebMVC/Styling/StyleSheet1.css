@@ -1,0 +1,20 @@
+﻿body {
+    background-color: red;
+}
+
+.Team {
+    color: white;
+}
+
+.Meta {
+    color: white;
+}
+
+.Arching {
+    color: white;
+}
+
+.btn-default{
+    color: white;
+    background-color:dodgerblue;
+}
