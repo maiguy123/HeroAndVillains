@@ -24,7 +24,7 @@ namespace HeroAndVillains.Data
         public int ArchingID { get; set; }
         public virtual Arching Arching { get; set; }
         [ForeignKey(nameof(Team))]
-        public string TeamID { get; set; }
+        public int TeamID { get; set; }
         public virtual Team Team { get; set; }
         public Guid OwnerId { get; set; }
 

@@ -3,8 +3,14 @@ C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVill
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\HeroAndVillains.Services.pdb
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\EntityFramework.dll
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\HeroAndVillains.Data.dll
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\HeroAndVillains.Models.dll
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\HeroAndVillains.Data.pdb
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\HeroAndVillains.Data.dll.config
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\HeroAndVillains.Models.pdb
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\HeroAndVillains.Models.dll.config
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\EntityFramework.xml
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\EntityFramework.SqlServer.xml
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml

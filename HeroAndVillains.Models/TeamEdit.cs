@@ -9,6 +9,8 @@ namespace HeroAndVillains.Models
     public class TeamEdit
     {
         public int TeamID { get; set; }
+        public string Name {get; set;}
+        
         public int Rating { get; set; }
     }
 }

@@ -16,4 +16,4 @@ C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVill
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Data\obj\Debug\HeroAndVillains.Data.pdb
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Data\obj\Debug\HeroAndVillains.Data.Migrations.InitialCreate.resources
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Data\obj\Debug\HeroAndVillains.Data.csproj.GenerateResource.cache
-C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Data\obj\Debug\HeroAndVillains.Data.Migrations.Team.resources
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.Data\obj\Debug\HeroAndVillains.Data.Migrations.HeroAnd.resources

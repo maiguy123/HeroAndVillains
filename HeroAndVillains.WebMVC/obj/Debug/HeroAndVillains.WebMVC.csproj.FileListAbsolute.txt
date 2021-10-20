@@ -1,5 +1,3 @@
-C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\obj\Debug\HeroAndVillains.WebMVC.csproj.AssemblyReference.cache
-C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\obj\Debug\HeroAndVillains.WebMVC.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\HeroAndVillains.WebMVC.dll.config
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\HeroAndVillains.WebMVC.dll
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\HeroAndVillains.WebMVC.pdb
@@ -88,6 +86,8 @@ C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVill
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\HeroAndVillains.Models.dll.config
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\HeroAndVillains.Services.pdb
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\HeroAndVillains.Services.dll.config
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\EntityFramework.xml
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\EntityFramework.SqlServer.xml
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\System.Web.Helpers.xml
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\System.Web.Mvc.xml
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\System.Web.Optimization.xml
@@ -97,8 +97,6 @@ C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVill
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\System.Web.WebPages.Razor.xml
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\Newtonsoft.Json.xml
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\Antlr3.Runtime.pdb
-C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\EntityFramework.xml
-C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\EntityFramework.SqlServer.xml
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\Microsoft.AspNet.Identity.Core.xml
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\Microsoft.AspNet.Identity.EntityFramework.xml
@@ -112,6 +110,8 @@ C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVill
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\Microsoft.Owin.Security.OAuth.xml
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\obj\Debug\HeroAndVillains.WebMVC.csproj.AssemblyReference.cache
+C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\obj\Debug\HeroAndVillains.WebMVC.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\obj\Debug\HeroAndVillains.WebMVC.csproj.CopyComplete
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\obj\Debug\HeroAndVillains.WebMVC.dll
 C:\ElevenFiftyProjects\100SD\HerosAndVillains.WebMvc\HeroAndVillains\HeroAndVillains.WebMVC\obj\Debug\HeroAndVillains.WebMVC.pdb

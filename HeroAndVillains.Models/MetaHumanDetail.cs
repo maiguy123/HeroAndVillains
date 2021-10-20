@@ -9,7 +9,7 @@ namespace HeroAndVillains.Models
     public class MetaHumanDetail
     {
         
-        public string MetaHumanID { get; set; }
+        public int MetaHumanID { get; set; }
         
         public string PowerType { get; set; }
         public int Rating { get; set; }

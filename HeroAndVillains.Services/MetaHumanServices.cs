@@ -25,6 +25,8 @@ namespace HeroAndVillains.Services
                     PowerType = model.PowerType,
                     Rating = model.Rating,
                     Home = model.Home,
+                    ArchingID = model.ArchingID,
+                    TeamID = model.TeamID
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -47,7 +49,9 @@ namespace HeroAndVillains.Services
                             PowerType = e.PowerType,
                             Rating = e.Rating,
                             Home = e.Home,
-
+                            ArchingID = e.ArchingID,
+                            TeamID = e.TeamID,
+                            MetaHumanID = e.MetaHumanID,
                         }
                         );
                 return query.ToArray();
@@ -61,7 +65,7 @@ namespace HeroAndVillains.Services
                 var entity =
                     ctx
                     .PoweredPeople
-                    .Single(e => e.MetaHumanID == id && e.OwnerId == _userId);
+                    .Single(e => e.MetaHumanID == id);
                 return
                     new MetaHumanDetail
                     {

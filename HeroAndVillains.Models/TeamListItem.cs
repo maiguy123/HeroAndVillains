@@ -8,8 +8,8 @@ namespace HeroAndVillains.Models
 {
     public class TeamListItem
     {
-        public int HeroID { get; set; }
         public int Rating { get; set; }
-        public string Members { get; set; }
+        public string Name { get; set; }
+        public int TeamID { get; set; }
     }
 }

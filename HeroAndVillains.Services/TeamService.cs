@@ -11,7 +11,7 @@ namespace HeroAndVillains.Services
     public class TeamService
     {
         private readonly Guid _userId;
-        public TeamService () { }
+        public TeamService() { }
         public TeamService(Guid userId)
         {
             _userId = userId;
@@ -23,6 +23,7 @@ namespace HeroAndVillains.Services
                 {
                     OwnerId = _userId,
                     Rating = model.Rating,
+                    Name = model.Name,
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -43,7 +44,9 @@ namespace HeroAndVillains.Services
                         e =>
                         new TeamListItem
                         {
-                            Rating = e.Rating
+                            Rating = e.Rating,
+                            TeamID= e.TeamID,
+                            Name = e.Name,
                         }
                         );
                 return query.ToArray();
@@ -54,32 +57,34 @@ namespace HeroAndVillains.Services
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
-                    ctx 
+                    ctx
                     .Group
-                    .Single(e => e.TeamID == id && e.OwnerId == _userId);
+                    .Single(e => e.TeamID == id);
                 return
                     new TeamDeatail
                     {
                         Rating = entity.Rating,
+                        Name = entity.Name,
                     };
 
             }
-            
-        }
-            public bool UpdateTeam(TeamEdit model)
-            {
-                using(var ctx = new ApplicationDbContext())
-                {
-                    var entity =
-                        ctx
-                        .Group
-                        .Single(e => e.TeamID == model.TeamID && e.OwnerId == _userId);
-                    entity.Rating = model.Rating;
 
-                    return ctx.SaveChanges() == 1;
-                }
+        }
+        public bool UpdateTeam(TeamEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Group
+                    .Single(e => e.TeamID == model.TeamID && e.OwnerId == _userId);
+                entity.Rating = model.Rating;
+                entity.Name = model.Name;
+
+                return ctx.SaveChanges() == 1;
             }
-        public bool DeleteTeam (int teamId)
+        }
+        public bool DeleteTeam(int teamId)
         {
             using (var ctx = new ApplicationDbContext())
             {

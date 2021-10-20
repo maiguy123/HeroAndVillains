@@ -14,5 +14,6 @@ namespace HeroAndVillains.Models
         public string Home { get; set; }
         public int ArchingID { get; set; }
         public int TeamID { get; set; }
+        public int MetaHumanID { get; set; }
     }
 }

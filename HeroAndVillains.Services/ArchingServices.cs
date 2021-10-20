@@ -37,12 +37,13 @@ namespace HeroAndVillains.Services
                 var query =
                     ctx
                     .Story
-                    .Where(e => e.OwnerId == _userId)
+                    //.Where(e => e.OwnerId == _userId)
                     .Select(
                         e =>
                         new ArchingListItem
                         {
-                            Story = e.Story
+                            Story = e.Story,
+                            ArchingID = e.ArchingID
                         }
                         );
                 return query.ToArray();
