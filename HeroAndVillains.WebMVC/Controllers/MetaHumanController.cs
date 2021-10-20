@@ -14,7 +14,8 @@ namespace HeroAndVillains.WebMVC.Controllers
         public ActionResult Index()
         {
             var service = new MetaHumanServices();
-            return View(service);
+            var model = service.GetMetaHuman();
+            return View(model);
         }
         public ActionResult Create()
         {

@@ -13,6 +13,7 @@ namespace HeroAndVillains.Models
         public int Rating { get; set; }
         public string Home { get; set; }
         public int ArchingID { get; set; }
-        public int TeamID { get; set; }
+        public int TeamID { get; set; } 
+        public int MetaHuamnID { get; set; }
     }
 }

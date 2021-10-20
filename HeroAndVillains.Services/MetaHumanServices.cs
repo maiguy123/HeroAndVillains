@@ -47,6 +47,7 @@ namespace HeroAndVillains.Services
                             PowerType = e.PowerType,
                             Rating = e.Rating,
                             Home = e.Home,
+                            MetaHuamnID = e.MetaHumanID
 
                         }
                         );
