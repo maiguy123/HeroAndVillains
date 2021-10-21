@@ -1,6 +1,8 @@
 ﻿# HeroAndVillains
  
  ## Resources
+ [Azure](https://heroandvillainswebmvc20211020195648.azurewebsites.net/)
+ 
  [Planning Document](https://docs.google.com/document/d/1EP0xjOuukzRB8ALXj6n7EwLLDeSZhdWKYf24K5pZgsY/edit#)
  
  [Trello](https://trello.com/b/0Z5Lugry/mcvc-project)
